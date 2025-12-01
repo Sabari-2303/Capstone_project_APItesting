@@ -12,12 +12,12 @@ public class tc5_delete {
 	Response response;
 	RequestSpecification request;
 	String output;
-	@Given("The user is in the URL delete which is https:\\/\\/jsonplaceholder.typicode.com\\/posts\\/{int}")
-	public void the_user_is_in_the_URL_delete_which_is_https_jsonplaceholder_typicode_com_posts(Integer int1) {
+
+	@Given("The user is in the URL delete which is {string}")
+	public void the_user_is_in_the_URL_delete_which_is(String string) {
 		System.out.println("User is in the URL");
 		RestAssured.baseURI=BASE_URL;
-		
-	    
+	   
 	}
 
 	@When("he sends Delete request")

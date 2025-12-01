@@ -15,11 +15,12 @@ public class tc1_get {
 	Response response;
 	RequestSpecification request;
 	String output;
-	@Given("the user in the URL which get is https:\\/\\/jsonplaceholder.typicode.com\\/posts\\/{int}")
-	public void the_user_in_the_URL_which_get_is_https_jsonplaceholder_typicode_com_posts(Integer int1) {
+
+	@Given("the user in the URL which get is {string}")
+	public void the_user_in_the_URL_which_get_is(String string) {
 		System.out.println("User is in the URL page");
 	    RestAssured.baseURI=BASE_URL;
-	   
+	    
 	}
 
 	@When("he sends the get request")
